@@ -1,0 +1,159 @@
+@import url(https://db.onlinewebfonts.com/c/167010b2782077992836168b48b8c057?family=Lovelace+Text);
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: "Lovelace Text";
+	line-height: 1.5;
+	color: #333;
+	background: #fff;
+	
+}
+
+h1,h2{
+	margin-bottom: 15px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.container{
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.navbar{
+	background: #333;
+	/*background: #3474e6;*/
+	color: #fff;
+	height: 45px; 
+	padding-top: 5px;
+}
+
+.navbar .logo{
+	font-size: clamp(12.5px,1.5vw, 35px);
+	font-weight: bold;
+}
+
+.navbar a{
+	color: #fff;
+	text-decoration: none;
+	font-size: clamp(12.5px,1.5vw, 18px);
+	font-weight: bold;
+}
+.navbar .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar ul{
+	display: flex;
+}
+
+.navbar ul li{
+	margin-left: 20px;
+}
+
+.header{
+	display:grid;
+	place-items: center;
+	text-align: center;
+	color:#e6b249;
+	height: 720px;
+	min-height: 400px;
+ 	background-image: url("logo.jpg");
+ 	background-position : center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;	
+ 	display:grid;
+	place-items: center;
+}
+.header .container{
+	display:grid;
+	place-items: center;
+}
+.container p{
+	color: #fff;
+}
+.ServiciosTitle img{
+	width: 390px;
+	height: 374px;
+}
+.ServiciosTitle{
+	display:flex;
+	flex-wrap:wrap;
+	flex: 1 0 500px;
+
+}
+.Servicios h1{
+	color:#e6b249;	
+	font-size: 3em;
+}
+.borders{
+	text-decoration:overline underline;
+	text-decoration-color:#e6b249;	
+	font-size: 3em;
+	text-align: center;
+}
+
+
+button{
+	background-color: #fff;
+	border:none;
+	width: 9em;
+	height: 3em;
+	color:#e6b249;
+	border-radius: 30em;
+	padding: 0;
+	font-size:20px;
+}
+.header h1{
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+
+.commentSection .row{
+	display: flex;
+	color:#e6b249;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:135px;
+	flex-wrap:wrap;
+}
+.commentSection .row h5{
+	font-size: 18px;
+	color:#59493b;
+}
+
+.commentSection .row img{
+width: 100;
+}
+
+.row p{
+	font-size: 20px;
+}
+.column {
+	flex: 1 0 200px;
+   /* width: 33.33%;*/
+	font-size: 1em;
+	font-size: clamp(15px,1.5vw, 1em);
+	line-height: 1.2;
+	height:200px;
+
+}
+.column img{
+    width: 100%;
+}
+.column h1{
+	font-size: clamp(1em,1.5vw, 3em);
+}
+
