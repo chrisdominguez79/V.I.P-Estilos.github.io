@@ -236,15 +236,21 @@ border-block: 3px solid #e6b249;
     font-size: 2em;
   }
 }
-button{
-	background-color: #fff;
-	border:none;
-	width: 9em;
-	height: 3em;
-	color:#e6b249;
-	border-radius: 30em;
-	padding: 0;
-	font-size:20px;
+.whatsapp-button {
+  background-color: #fff;
+  border: none;
+  width: 12em;
+  height: 3em;
+  color: #e6b249;
+  border-radius: 30em;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-flex;           /* make the button a flex container */
+  align-items: center;            /* vertical center */
+  justify-content: center;        /* horizontal center */
+  text-decoration: none;
+
 }
 .header h1{
 	font-size: 3em;
