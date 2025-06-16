@@ -76,7 +76,7 @@ ul{
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: white;
+ color: black; 
     position: absolute;
   top: 15px;
   right: 20px;
