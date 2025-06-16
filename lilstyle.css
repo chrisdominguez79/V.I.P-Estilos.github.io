@@ -95,6 +95,7 @@ ul{
   .logo {
     width: 180px;
     height: auto;
+    margin-top: -10px; 
   }
 
   .navbar {
@@ -121,7 +122,20 @@ ul{
 .hamburger {
   display: block;
 }
+  /* Optional: Fine-tune content spacing */
+  .header .container h1 {
+    margin-bottom: 10px;
+  }
 
+  .header .container button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header .container p {
+    margin-top: 5px;
+  }
+	
 }
 .header{
 	display:grid;
@@ -140,6 +154,7 @@ ul{
 .header .container{
 	display:grid;
 	place-items: center;
+	margin-top: -40px; /* Shift all content up slightly */
 }
 
 .container p{
