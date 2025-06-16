@@ -136,6 +136,7 @@ ul{
 
   .navbar.active {
     right: 0;
+    
   }
 
   .navbar ul {
@@ -151,9 +152,14 @@ ul{
     right: 20px;
     font-size: 30px;
     color: black;
+    transition: color 0.3s ease;
     z-index: 1100;
     cursor: pointer;
   }
+.hamburger.active {
+  color: #e6b249; /* gold or white for visibility */
+}
+  
 }
 
 .header{
