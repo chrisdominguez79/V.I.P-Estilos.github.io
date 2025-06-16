@@ -111,8 +111,9 @@ ul{
   .hamburger {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 20px;
+    color: black;
   }
 
   .navbar.active {
