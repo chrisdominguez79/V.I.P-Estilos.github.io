@@ -151,7 +151,7 @@ ul{
     top: 15px;
     right: 20px;
     font-size: 30px;
-    color: black;
+    color: white;
     transition: color 0.3s ease;
     z-index: 1100;
     cursor: pointer;
