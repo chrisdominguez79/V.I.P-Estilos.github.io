@@ -82,7 +82,9 @@ ul{
   right: 20px;
   z-index: 1100;
 }
-
+.header .container button {
+  margin: 10px 0;
+}
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
 
