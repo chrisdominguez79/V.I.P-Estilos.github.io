@@ -248,7 +248,7 @@ border-block: 3px solid #e6b249;
   align-items: center;            /* vertical center */
   justify-content: center;        /* horizontal center */
   text-decoration: none;
-
+  margin: 10px 0;
 }
 .header h1{
 	font-size: 3em;
