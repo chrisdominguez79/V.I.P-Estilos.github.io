@@ -190,10 +190,12 @@ referrerpolicy="no-referrer-when-downgrade">
  		    const navbar = document.querySelector('.navbar');
  		    const hamburger = document.querySelector('.hamburger');
  		    const socials = document.querySelector('.mobile-socials');
-
+ 		   const body = document.body;
  		    navbar.classList.toggle('active');
  		    hamburger.classList.toggle('active');
  		    socials.classList.toggle('active');
+ 		   body.classList.toggle('no-scroll'); // 🚫 Disable/enable scroll
+
   	}
 	</script>
 </body>
