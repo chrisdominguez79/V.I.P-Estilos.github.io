@@ -124,7 +124,7 @@ ul{
     right: -100%;
     width: 250px;
     height: 100vh;
-    background-color:#e6b249;
+    background-color: rgba(0, 0, 0, 0.95);
     transition: right 0.3s ease;
     padding-top: 80px;
     z-index: 1000;
@@ -167,6 +167,10 @@ ul{
   margin-top: 10px;
 }
 
+.mobile-socials.active {
+  display: flex;
+}
+
 .mobile-socials a {
   color: white;
   font-size: 1.8rem;
@@ -174,15 +178,17 @@ ul{
 }
 
 .mobile-socials a:hover {
-  color: #e1306c;
+  color: #e6b249;
 }
-
+.mobile-socials a:nth-of-type(2) {
+ margin-left: 5px;
+}
 .mobile-socials a:nth-of-type(2):hover {
-  color: black;
+  color: #e6b249;
 }
 
 /* Show when menu is active */
-.navbar.active ~ .mobile-socials {
+.header.show-socials .mobile-socials {
   display: flex;
 }
 
