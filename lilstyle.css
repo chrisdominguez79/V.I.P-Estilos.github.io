@@ -14,8 +14,7 @@ body {
 	color: #333;
 	background: #fff;
 	margin:0;
-	padding:0;
-	
+	padding:0;	
 }
 
 h1,h2{
@@ -82,9 +81,7 @@ ul{
   right: 20px;
   z-index: 1100;
 }
-.header .container button {
-  margin: 10px 0;
-}
+
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
 
@@ -119,6 +116,7 @@ ul{
   .header .container button {
     margin: 10px 0;
   }
+
 
   .navbar {
     position: fixed;
@@ -160,6 +158,49 @@ ul{
   
 }
 
+
+/* Hide socials unless navbar is open on mobile */
+.mobile-socials {
+  display: none;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.mobile-socials a {
+  color: white;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+.mobile-socials a:hover {
+  color: #e1306c;
+}
+
+.mobile-socials a:nth-of-type(2):hover {
+  color: black;
+}
+
+/* Show when menu is active */
+.navbar.active ~ .mobile-socials {
+  display: flex;
+}
+
+/* Hide everything on larger screens */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    display: flex !important;
+  }
+
+  .mobile-socials {
+    display: none !important;
+  }
+}
+
 .header{
 	display:grid;
 	place-items: center;
@@ -170,9 +211,7 @@ ul{
  	background-image: url("logo.jpg");
  	background-position : center;
  	background-repeat: no-repeat;
- 	background-size: cover;	
- 	display:grid;
-	place-items: center;
+ 	background-size: cover;
 }
 .header .container{
 	display:grid;
@@ -250,6 +289,7 @@ border-block: 3px solid #e6b249;
   text-decoration: none;
   margin: 10px 0;
 }
+
 .header h1{
 	font-size: 3em;
 	font-weight: bold;
@@ -313,6 +353,13 @@ aspect-ratio: 1 / 1;
     padding: 10px;
   }
 }
+.maps {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20px; /* optional spacing */
+}
+	
 
 
 
