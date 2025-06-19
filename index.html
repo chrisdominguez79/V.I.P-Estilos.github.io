@@ -16,7 +16,6 @@
 	</head>
 <body>
 
-
 	<div class="header">
 	
 	<div class="hamburger"onclick="toggleMenu()">☰</div>	
@@ -39,23 +38,23 @@
 				</li>
 
 			</ul>
-		</nav>
-	</div>
-	
-	
 	<div class="mobile-socials">
 		<a href="https://www.instagram.com/vip.estilos.oficial/" target="_blank" aria-label="Instagram">
 			<i class="fa-brands fa-instagram"></i>
 		</a>
 		<a href="https://www.tiktok.com/@vip.estilos.oficial" target="_blank" aria-label="TikTok">
 			<i class="fa-brands fa-tiktok"></i>
-		</a>
-	</div>
+		</a>			
+	</div>			
+		</nav>
+
+</div>
+	
 				<div class="container">
 			<div>
 				<h1>Tu <em>estilo</em>, tu <em>momento</em></h1>
 			
-					<a href="https://wa.me/12814083108?text=Hola%20quiero%20agendar%20una%20cita" target="_blank" class="whatsapp-button">
+					<a href="https://wa.me/9364198559?text=Hola%20quiero%20agendar%20una%20cita" target="_blank" class="whatsapp-button">
  					 AGENDA AHORA
 					</a>
 				
@@ -188,11 +187,13 @@ referrerpolicy="no-referrer-when-downgrade">
 	<script>
  		 function toggleMenu() 
  	{
-   		 const navbar = document.querySelector('.navbar');
-   	    const hamburger = document.querySelector('.hamburger');
-   		 navbar.classList.toggle('active');
-   		hamburger.classList.toggle('active'); // This toggles the color change
-   	 document.getElementById('navbar').classList.toggle('active');
+ 		    const navbar = document.querySelector('.navbar');
+ 		    const hamburger = document.querySelector('.hamburger');
+ 		    const socials = document.querySelector('.mobile-socials');
+
+ 		    navbar.classList.toggle('active');
+ 		    hamburger.classList.toggle('active');
+ 		    socials.classList.toggle('active');
   	}
 	</script>
 </body>
