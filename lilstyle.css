@@ -362,31 +362,6 @@ aspect-ratio: 1 / 1;
     padding: 10px;
   }
 }
-.maps {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-left: 20px; /* optional spacing */
-}
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .commentSection .row{
@@ -440,5 +415,45 @@ aspect-ratio: 1 / 1;
 
 }
 
+
+.footer .row{
+	display: flex;
+	flex-wrap:wrap;
+	color:#e6b249;
+	gap: 20px;
+	padding: 50px 35px;
+	
+}
+
+.column_VISIT_TITLE{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+	text-align: center;
+	  max-width: 500px;
+	
+}
+.column_VISIT_TITLE em{
+	font-size: clamp(2em, 4vw, 4em);
+}
+.column_VISIT_TITLE p{
+	
+	font-size: clamp(18px, 1.2vw, 20px);
+	color:#59493b;
+	margin-bottom: 10px;
+}
+.column_maps{
+	  display: flex;
+  align-items: center;     /* vertically center */
+  justify-content: center;
+	width: 100%;
+    height:auto;
+    max-width: 100%;
+    border-radius:8px;
+      flex: 2 1 500px; /* grow more than the title column */
+    
+    
+}
 
 
