@@ -350,9 +350,10 @@ aspect-ratio: 1 / 1;
   .collage {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on phones */
     grid-template-areas:
-      "img1 img2"
-      "img3 img3"
+      "img1 img1"
       "img4 img5"
+      "img2 img2"
+	"img3 img3"
       "img6 img7"
       "img8 img8";
     gap: 8px; /* slightly smaller gap for phones */
