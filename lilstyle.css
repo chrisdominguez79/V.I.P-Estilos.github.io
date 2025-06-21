@@ -347,6 +347,10 @@ aspect-ratio: 1 / 1;
   border-radius: 6px;
 }
 @media (max-width: 768px) {
+	  .img1,
+  .img2 {
+    object-fit: contain;
+  }
   .collage {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on phones */
     grid-template-areas:
