@@ -211,12 +211,22 @@ referrerpolicy="no-referrer-when-downgrade">
  		    const hamburger = document.querySelector('.hamburger');
  		    const socials = document.querySelector('.mobile-socials');
  		   const body = document.body;
- 		    navbar.classList.toggle('active');
- 		    hamburger.classList.toggle('active');
- 		    socials.classList.toggle('active');
- 		   body.classList.toggle('no-scroll'); // 🚫 Disable/enable scroll
-
-  	}
+		const isActive = navbar.classList.contains('active');
+		
+		    if (isActive) {
+		      // Menu is open — now closing it
+		      navbar.classList.remove('active');
+		      hamburger.classList.remove('active');
+		      socials.classList.remove('active');
+		      body.classList.remove('no-scroll'); // ✅ Re-enable scroll
+		    } else {
+		      // Menu is closed — now opening it
+		      navbar.classList.add('active');
+		      hamburger.classList.add('active');
+		      socials.classList.add('active');
+		      body.classList.add('no-scroll'); // 🚫 Disable scroll
+		    }
+		  }
 	</script>
 </body>
 
