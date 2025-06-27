@@ -205,6 +205,15 @@ referrerpolicy="no-referrer-when-downgrade">
 	</div>
 	</section>
 	<script>
+		  window.onload = function() {
+    // Scroll to top on page load, even if there's a hash in the URL
+    window.scrollTo(0, 0);
+    
+    // Optional: remove the hash from URL without reloading
+    if (window.location.hash) {
+      history.replaceState(null, null, ' ');
+    }
+  };
  		 function toggleMenu() 
  	{
  		    const navbar = document.querySelector('.navbar');
