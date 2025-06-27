@@ -214,7 +214,7 @@ referrerpolicy="no-referrer-when-downgrade">
       history.replaceState(null, null, ' ');
     }
   };
- 		 function toggleMenu() 
+ 		 function toggleMenu(forceClose = false) 
  	{
  		    const navbar = document.querySelector('.navbar');
  		    const hamburger = document.querySelector('.hamburger');
@@ -222,7 +222,7 @@ referrerpolicy="no-referrer-when-downgrade">
  		   const body = document.body;
 		const isActive = navbar.classList.contains('active');
 		
-		    if (isActive) {
+		    if (isActive || forceClose) {
 		      // Menu is open — now closing it
 		      navbar.classList.remove('active');
 		      hamburger.classList.remove('active');
