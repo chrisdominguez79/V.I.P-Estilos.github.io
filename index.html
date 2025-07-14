@@ -214,6 +214,24 @@ referrerpolicy="no-referrer-when-downgrade">
       }
     }, 0); // Allows scroll restoration to finish first
   });
+		  function scrollToTopOnLoad(event) {
+    // Only scroll to top on a regular reload, not when coming back from bfcache
+    const isBfcacheRestore = event.persisted;
+
+    if (!isBfcacheRestore) {
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+
+        // Optional: Remove hash from URL
+        if (window.location.hash) {
+          history.replaceState(null, null, ' ');
+        }
+      }, 0);
+    }
+  }
+
+  window.addEventListener('pageshow', scrollToTopOnLoad);
+		
  		 function toggleMenu(forceClose = false) 
  	{
  		    const navbar = document.querySelector('.navbar');
