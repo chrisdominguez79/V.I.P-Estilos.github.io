@@ -206,31 +206,24 @@ referrerpolicy="no-referrer-when-downgrade">
 	</div>
 	</section>
 	<script>
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      window.scrollTo(0, 0);
-      if (window.location.hash) {
-        history.replaceState(null, null, ' ');
-      }
-    }, 0); // Allows scroll restoration to finish first
-  });
-		  function scrollToTopOnLoad(event) {
-    // Only scroll to top on a regular reload, not when coming back from bfcache
-    const isBfcacheRestore = event.persisted;
 
-    if (!isBfcacheRestore) {
-      setTimeout(() => {
+		  // Prevent Safari and mobile browsers from restoring scroll position
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  // Scroll to top on page show (even if from bfcache)
+  window.addEventListener('pageshow', function (event) {
+    if (!event.persisted) {
+      setTimeout(function () {
         window.scrollTo(0, 0);
-
-        // Optional: Remove hash from URL
         if (window.location.hash) {
           history.replaceState(null, null, ' ');
         }
       }, 0);
     }
-  }
-
-  window.addEventListener('pageshow', scrollToTopOnLoad);
+  });
+	
 		
  		 function toggleMenu(forceClose = false) 
  	{
